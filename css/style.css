@@ -41,6 +41,7 @@
     color: #a9a9a9;
 }
 
+/* button */
 .button{
     display: flex;
     flex-grow: 100px;
@@ -72,6 +73,44 @@
     font-size: 14px;
     color: #bdbdbd;
     line-height: 17.07px;
+}
+
+/* gallery */
+.gallery{
+    width: 660px;
+    height: 680px;
+    display: grid;
+    grid-template-areas: 
+        'img1 img2 img2'
+        'img3 img3 img4'
+        'img6 img5 img4';
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    background-color: aquamarine;
+}
+
+.gallery .img1 img{
+    grid-area: img1;
+}
+
+.gallery .img2 img{
+    grid-area: img2;
+}
+
+.gallery .img3{
+    grid-area: img3;
+}
+
+.gallery .img4{
+    grid-area: img4;
+}
+
+.gallery .img5{
+    grid-area: img5;
+}
+
+.gallery .img6{
+    grid-area: img6;
 }
 
 
