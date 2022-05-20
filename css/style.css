@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(../font/montserratalternates-regular-webfont.woff2) format('woff2');
+}
+
+.container{
+    width: 100%;
+    height: 1577px;
+    margin-top: 41px;;
+    border-radius: 24px;
+    background-color: #fff;
+    position: relative;
+    font-family: 'montserrat', sans-serif;
+}
+
+.profile{
+    display: grid;
+    height: 255px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 217px px 17px;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.container img{
+    max-width: 217px;
+    border-radius: 16px;
+}
+
+.profile b{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4e5150;
+}
+
+.profile p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #a9a9a9;
+}
+
+.button{
+    display: flex;
+    flex-grow: 100px;
+    justify-content: center;
+}
+
+.button .button1,
+.button .button2,
+.button .button3{
+    width: 100px;
+    height: 67px;
+    padding-top: 17px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-right: 10px;
+    border-radius: 12px;
+    background-color: #e5e5e5;
+    text-align: center;
+}
+
+.button h4{
+    font-weight: 600px;
+    font-size: 18px;
+    color: #4e5150;
+}
+
+.button h5{
+    font-weight: 600px;
+    font-size: 14px;
+    color: #bdbdbd;
+    line-height: 17.07px;
+}
+
+
+
+
+
+
