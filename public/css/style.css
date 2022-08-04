@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(../font/montserratalternates-regular-webfont.woff2) format('woff2');
+}
+
+.container{
+    width: 100%;
+    height: 1577px;
+    margin-top: 41px;;
+    border-radius: 24px;
+    background-color: #fff;
+    position: relative;
+    font-family: 'montserrat', sans-serif;
+}
+
+.profile{
+    display: grid;
+    height: 255px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 217px 29px 17px;
+    justify-items: center;
+    row-gap: 18px;
+}
+
+.container img{
+    max-width: 217px;
+    border-radius: 16px;
+}
+
+.profile b{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4e5150;
+}
+
+.profile p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #a9a9a9;
+}
+
+/* button */
+.button{
+    display: flex;
+    flex-grow: 100px;
+    justify-content: center;
+}
+
+.button .button1,
+.button .button2,
+.button .button3{
+    width: 100px;
+    height: 67px;
+    padding-top: 17px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-right: 10px;
+    border-radius: 12px;
+    background-color: #e5e5e5;
+    text-align: center;
+}
+
+.button h4{
+    font-weight: 600px;
+    font-size: 18px;
+    color: #4e5150;
+}
+
+.button h5{
+    font-weight: 600px;
+    font-size: 14px;
+    color: #bdbdbd;
+    line-height: 17.07px;
+}
+
+/* gallery */
+.gallery{
+    width: 75%;
+    height: 60%;
+    display: grid;
+    grid-template-areas: 
+        'img1 img2 img2'
+        'img3 img3 img4'
+        'img6 img5 img4';
+    gap: 23px;
+    margin: 80px auto;
+}
+
+.gallery .img1{
+    grid-area: img1;
+    background-image: url(../asset/Untitled-1.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-position: center;
+}
+
+.gallery .img2{
+    grid-area: img2;
+    background-image: url(../asset/Untitled-2.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-position: center;
+}
+
+.gallery .img3{
+    grid-area: img3;
+    background-image: url(../asset/Untitled-3.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-position: center;
+}
+
+.gallery .img4{
+    grid-area: img4;
+    background-image: url(../asset/Untitled-4.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-position: center;
+}
+
+.gallery .img5{
+    grid-area: img5;
+    background-image: url(../asset/Untitled-5.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-position: center;
+}
+
+.gallery .img6{
+    grid-area: img6;
+    background-image: url(../asset/Untitled-6.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-position: center;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    font-family: 'montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    color: #b9bdcf;
+    width: 325px;
+    height: 100px;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.footer a{
+    color: inherit;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* responsive breakpoint */
+@media screen and (max-width:600px) {
+    .container{
+        width: 375px;
+        height: 857px;
+        margin-top: 17.61px;
+    }
+    
+    .profile{
+        height: 212px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 141px 19px 11px;
+        row-gap: 12px;
+    }
+    
+    .container img{
+        max-width: 141px;
+    }
+    
+    .profile b{
+        font-size: 14px;
+        line-height: 17.07px;
+    }
+    
+    .profile p{
+        font-size: 10px;
+        line-height: 0px;
+    }
+    
+    /* button */
+    .button{
+        flex-grow: 78px;
+        margin-top: -90px;
+    }
+    
+    .button .button1,
+    .button .button2,
+    .button .button3{
+        width: 78px;
+        height: 52px;
+        padding-top: 14px;
+        margin-top: 90px;
+        margin-right: 10px;
+        border-radius: 12px;
+    }
+    
+    .button h4{
+        font-size: 12px;
+    }
+    
+    .button h5{
+        font-size: 12px;
+        line-height: 14.63px;
+    }
+    
+    /* gallery */
+    .gallery{
+        gap: 5px;
+        margin: 45px auto;
+        height: 381px;
+        width: 95%;
+    }
+    
+    .gallery .img1,
+    .gallery .img5,
+    .gallery .img6{
+        background-size: 127px 127px;
+    }
+    
+    .gallery .img2,
+    .gallery .img3{
+        background-size: 254px 127px;
+    }
+    
+    .gallery .img4{
+        background-size: 127px 254px;
+        background-position: right;
+    }
+
+    /* footer */
+    .footer{
+        margin-left: 22px;
+    }
+}
+
+
+
+
+
+
